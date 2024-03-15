@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.10 on win32)" generated="20240315 16:42:30.623" rpa="false" schemaversion="4">
+<suite id="s1" name="LoginTest" source="C:\Users\N52\PycharmProjects\PythonAutomationRobotFramework\TestCases\LoginTest.robot">
+<test id="s1-t1" name="Mercury Demo LoginTest" line="15">
+<kw name="Open my Browser" library="LoginKeywords">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240315 16:42:31.131" level="INFO">Opening browser 'edge' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<status status="PASS" starttime="20240315 16:42:31.129" endtime="20240315 16:43:03.823"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240315 16:43:03.823" endtime="20240315 16:43:03.967"/>
+</kw>
+<status status="PASS" starttime="20240315 16:42:31.127" endtime="20240315 16:43:03.967"/>
+</kw>
+<kw name="Enter Username" library="LoginKeywords">
+<arg>${user}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username_txt}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240315 16:43:03.969" level="INFO">Typing text 'tutorial' into text field 'xpath:/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[2]/td[2]/input'.</msg>
+<status status="PASS" starttime="20240315 16:43:03.968" endtime="20240315 16:43:04.090"/>
+</kw>
+<status status="PASS" starttime="20240315 16:43:03.968" endtime="20240315 16:43:04.090"/>
+</kw>
+<kw name="Enter Password" library="LoginKeywords">
+<arg>${pwd}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password_txt}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240315 16:43:04.091" level="INFO">Typing text 'tutorial' into text field 'xpath:/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[3]/form/table/tbody/tr[4]/td/table/tbody/tr[3]/td[2]/input'.</msg>
+<status status="PASS" starttime="20240315 16:43:04.091" endtime="20240315 16:43:04.181"/>
+</kw>
+<status status="PASS" starttime="20240315 16:43:04.090" endtime="20240315 16:43:04.181"/>
+</kw>
+<kw name="Click Login" library="LoginKeywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240315 16:43:04.182" level="INFO">Clicking button 'name:submit'.</msg>
+<status status="PASS" starttime="20240315 16:43:04.182" endtime="20240315 16:43:05.648"/>
+</kw>
+<status status="PASS" starttime="20240315 16:43:04.181" endtime="20240315 16:43:05.648"/>
+</kw>
+<kw name="Veirfy Successful Login" library="LoginKeywords">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Login: Mercury Tours</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20240315 16:43:05.658" level="INFO">Page title is 'Login: Mercury Tours'.</msg>
+<status status="PASS" starttime="20240315 16:43:05.649" endtime="20240315 16:43:05.658"/>
+</kw>
+<status status="PASS" starttime="20240315 16:43:05.649" endtime="20240315 16:43:05.658"/>
+</kw>
+<kw name="Close my Browser" library="LoginKeywords">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240315 16:43:05.659" endtime="20240315 16:43:11.988"/>
+</kw>
+<status status="PASS" starttime="20240315 16:43:05.659" endtime="20240315 16:43:11.988"/>
+</kw>
+<status status="PASS" starttime="20240315 16:42:31.125" endtime="20240315 16:43:11.989"/>
+</test>
+<status status="PASS" starttime="20240315 16:42:30.631" endtime="20240315 16:43:11.990"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
